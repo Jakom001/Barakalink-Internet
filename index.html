@@ -20,24 +20,37 @@
 		</div>
 	</div>
 
-	<div class="navbar">
-		<div class="logo">
-			<img src="images/logo.png" alt="logo">
+	<header>
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/logo.png" alt="logo">
+			</div>
+
+			<div class="nav-links">
+				<a href="hero">Home</a>
+				<a href="about">About Us</a>
+				<a href="services">Services</a>
+				<a href="coverage">Coverage</a>
+				<a href="contact">Contact us</a>
+			</div>
+			<div class="toggle-btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
 		</div>
 
-		<div class="nav-links">
+		<div class="dropdown-menu">
 			<a href="#">Home</a>
 			<a href="#">About Us</a>
-			<a href="#">Shop</a>
+			<a href="#">Services</a>
 			<a href="#">Coverage</a>
 			<a href="#">Contact us</a>
 		</div>
 		
-	</div>
+</header>
 
-	<div class="header">
+	<div class="home-hero">
 		<h1>BarakaLink Fiber solutions</h1>
-		<h2>We bring unlimited high speed internet to you</h2>
+		<h2>We bring to you unlimited high speed internet. </h2>
 
 		<button>VIEW OUR PLANS</button>
 	</div>
@@ -190,33 +203,6 @@
 </div>
 
 
-
-<div class="section">
-	<h1>Shop</h1>
-
-	<div class="store">
-		
-		<div class="store-card">
-			<img src="images/tender.png" alt="router">
-			<div class="description">
-				<p>Tender Router</p>
-				<p><del>Ksh 2500</del>  Ksh 1800</p>
-				<button>add to cart</button>
-			</div>
-		</div>
-		
-		<div class="store-card">
-			<img src="images/cables.png" alt="router">
-			<div class="description">
-				<p>LAN cables</p>
-				<p><del>Ksh 2500</del>Ksh 1800</p>
-				<button>add to cart</button>
-			</div>
-		</div>
-		
-		
-	</div>
-</div>
 	
 	<footer>
 		<div class="top-navbar">
@@ -250,5 +236,24 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle-btn')
+		const toggleBtnIcon = document.querySelector('.toggle-btn i')
+		const dropDownMenu = document.querySelector('.dropdown-menu')
+
+
+		toggleBtn.onclick = function (){
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+
+		}
+
+	</script>
 </body>
 </html>
