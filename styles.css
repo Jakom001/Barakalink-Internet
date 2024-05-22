@@ -127,7 +127,9 @@ header{
 }
 .home-hero button:hover{
 	scale:1.05;
-	
+}
+.home-hero a{
+	color: var(--white-color);
 }
 .section{
 	margin: 50px;
@@ -212,6 +214,39 @@ header{
 	border-radius: 12px;
 	align-self: stretch;
 }
+
+.hero{
+	background-image: url("images/streetlogo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+.hero a{
+	color: var(--black-color);
+
+}
+.hero a:hover{
+	color: var(--secondary-color);
+}
+footer .social-media{
+	background-color: var(--primary-color);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+footer .connect p, .connect a{
+	color: var(--white-color);
+	padding: 12px 16px;
+}
+
 .footer-content{
 	display: flex;
 	align-items: center;
@@ -228,6 +263,12 @@ header{
 	background-color: var(--gray-color);
 	border-radius: 15px;
 	padding: 14px;
+}
+.footer-items a{
+	color: var(--black-color);
+}
+.footer-items li{
+	padding: 12px;
 }
 
 .copyright{
@@ -252,5 +293,12 @@ header{
 	.dropdown-menu{
 		left: 2rem;
 		width: unset;
+	}
+	.social-media{
+		flex-direction: column;
+		
+	}
+	.social-media .connect{
+		margin-bottom: 10px;
 	}
 }

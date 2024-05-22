@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
-	<div class="top-navbar">
+	<div class="top-navbar on-top">
 		<div class="top-contact">
 			<a href="#"><i class="fa-solid fa-phone"></i>  (+254 ) 728169645</a> 
 			<a href="#"><i class="fa-regular fa-envelope"></i>  info@barakalink.co.ke</a>
@@ -27,11 +27,11 @@
 			</div>
 
 			<div class="nav-links">
-				<a href="hero">Home</a>
-				<a href="about">About Us</a>
-				<a href="services">Services</a>
-				<a href="coverage">Coverage</a>
-				<a href="contact">Contact us</a>
+				<a href="#">Home</a>
+				<a href="#">About Us</a>
+				<a href="#">Services</a>
+				<a href="#">Coverage</a>
+				<a href="#">Contact us</a>
 			</div>
 			<div class="toggle-btn">
 				<i class="fa-solid fa-bars"></i>
@@ -52,10 +52,10 @@
 		<h1>BarakaLink Fiber solutions</h1>
 		<h2>We bring to you unlimited high speed internet. </h2>
 
-		<button>VIEW OUR PLANS</button>
+		<button><a href="#pricing">VIEW OUR PLANS</a></button>
 	</div>
 
-<div class="pricing section">
+<div class="pricing section" id="pricing">
 
 
 		<h1>Pricing</h1>
@@ -219,12 +219,12 @@
 
 	
 	<footer>
-		<div class="top-navbar">
-			<div class="top-contact">
+		<div class="social-media">
+		connect">
 				<p>Get Connected with us on social media</p>
 				
 			</div>
-			<div class="top-social">
+			<div class="connect">
 				<a href="#"><i class="fa-brands fa-facebook"></i></a> 
 				<a href="#"><i class="fa-brands fa-tiktok"></i></a>
 				<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -234,7 +234,11 @@
 		<div class="footer-content">
 			<div class="footer-items">
 				<h2>BarakaLink Networks</h2>
-				<p>Victory House, J34, Westlands P. O. Box 02312 - 34353 Nairobi.</p>
+				<ul>
+					<li>Victory House, J34, </li>
+					<li> Westlands P. O. Box 02312 - 34353, Nairobi</li>
+					<li>Call: 0728169645</li>
+				</ul>
 				
 			</div>
 
@@ -244,13 +248,13 @@
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Coverage</a></li>
 					<li><a href="#">Change Password</a></li>
-					<li><a href="#"> us</a></li>
+					<li><a href="#">Contact us</a></li>
 				</ul>
 			</div>
 			<div class="footer-items">
 				<h3>Our Policies</h3>
 				<ul>
-					<li><a href="#"> and Conditions</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
 					<li><a href="#">FAQ's</a></li>
 					<li><a href="#">Open hours</a></li>
 					<li><a href="#">Mon - Sat: 8 am - 5 pm</a></li>
@@ -261,8 +265,9 @@
 				<ul>
 					<li><a href="#">Baraka 4 Mbps</a></li>
 					<li><a href="#">Baraka 6 Mbps</a></li>
-					<li><a href="#">Baraka 8 mbps</a> <li>
-					<li><a href="#">baraka 10 mbp</a>s</li>
+					<li><a href="#">baraka 10 mbps</a></li>
+					<li><a href="#">baraka 20 mbps</a></li>
+
 				</ul>
 			</div>
 			
@@ -273,22 +278,6 @@
 	</footer>
 
 
-	<script>
-		const toggleBtn = document.querySelector('.toggle-btn')
-		const toggleBtnIcon = document.querySelector('.toggle-btn i')
-		const dropDownMenu = document.querySelector('.dropdown-menu')
-
-
-		toggleBtn.onclick = function (){
-			dropDownMenu.classList.toggle('open')
-			const isOpen = dropDownMenu.classList.contains('open')
-
-			toggleBtnIcon.classList = isOpen
-			? 'fa-solid fa-xmark'
-			: 'fa-solid fa-bars'
-
-		}
-
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
